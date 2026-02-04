@@ -41,40 +41,40 @@
       <nav class="sidebar-nav">
         <div class="nav-section">
           <span class="nav-section-title">Main</span>
-          <a href="#" data-view="dashboard" class="nav-item active">
+          <a href="#" data-view="dashboard" id="dashboard-nav" class="nav-item active">
             <i class="fa-solid fa-house"></i><span>Dashboard</span>
           </a>
         </div>
         
         <div class="nav-section">
           <span class="nav-section-title">Explore</span>
-          <a href="#" data-view="holidays" class="nav-item">
+          <a href="#" data-view="holidays" id="holidays-nav" class="nav-item">
             <i class="fa-solid fa-calendar-days"></i><span>Holidays</span>
           </a>
-          <a href="#" data-view="events" class="nav-item">
+          <a href="#" data-view="events" id="events-nav" class="nav-item">
             <i class="fa-solid fa-ticket"></i><span>Events</span>
           </a>
-          <a href="#" data-view="weather" class="nav-item">
+          <a href="#" data-view="weather" id="weather-nav" class="nav-item">
             <i class="fa-solid fa-cloud-sun"></i><span>Weather</span>
           </a>
-          <a href="#" data-view="long-weekends" class="nav-item">
+          <a href="#" data-view="long-weekends" id="long-weekends-nav" class="nav-item">
             <i class="fa-solid fa-umbrella-beach"></i><span>Long Weekends</span>
           </a>
         </div>
         
         <div class="nav-section">
           <span class="nav-section-title">Travel Tools</span>
-          <a href="#" data-view="currency" class="nav-item">
+          <a href="#" data-view="currency" id="currency-nav" class="nav-item">
             <i class="fa-solid fa-money-bill-transfer"></i><span>Currency</span>
           </a>
-          <a href="#" data-view="sun-times" class="nav-item">
+          <a href="#" data-view="sun-times" id="sun-times-nav" class="nav-item">
             <i class="fa-solid fa-sun"></i><span>Sun Times</span>
           </a>
         </div>
         
         <div class="nav-section">
           <span class="nav-section-title">Personal</span>
-          <a href="#" data-view="my-plans" class="nav-item">
+          <a href="#" data-view="my-plans" id="my-plans-nav" class="nav-item">
             <i class="fa-solid fa-heart"></i><span>My Plans</span>
             <span id="plans-count" class="nav-badge hidden">0</span>
           </a>
@@ -165,8 +165,8 @@
                 <div class="form-group flex-2">
                   <label><i class="fa-solid fa-earth-americas"></i> Country</label>
                   <select id="global-country" class="form-select">
-                    <option value="">Select Country</option>
-                    <option value="EG" selected>🇪🇬 Egypt</option>
+                    <option value="" >Select Country</option>
+                    <option value="EG" class="form-option" selected>🇪🇬 Egypt</option>
                     <!-- TODO: Populate dynamically from API -->
                   </select>
                 </div>
